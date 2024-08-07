@@ -1,0 +1,44 @@
+body {
+    display: grid;
+    grid-template-columns: 280px auto;
+    grid-template-rows: 100px 530px 100px 100px;
+    gap: 20px 10px ;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin-top: 30px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+.head {
+    grid-column: 1/4;
+    background-color: rgba(99,150,255,255);
+}
+
+.sidebar {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: rgba(98,254,148,255);
+}
+.main {
+    grid-column: 2/4;
+    background-color: rgba(255,99,152,255);
+    /* height: 100px; */
+}
+
+.extra {
+    background-color: rgba(151,255,93,255);
+    grid-column: 2/4;
+}
+
+.footer {
+    background-color: rgba(255,153,95,255);
+    grid-column: 1/4;
+}
